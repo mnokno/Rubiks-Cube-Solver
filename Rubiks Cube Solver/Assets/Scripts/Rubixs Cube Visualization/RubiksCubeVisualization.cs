@@ -97,7 +97,7 @@ namespace RubiksCube.Visualization
         // Updates is called once per frame
         void Update()
         {
-            if (cubeActionQueue.Count != 0 && acceptingNextItem && (!animate || !currentlyAnimating))
+            if (cubeActionQueue.Count != 0 && acceptingNextItem && !currentlyAnimating)
             {
                 NextInQueue();
             }
